@@ -1,0 +1,89 @@
+@use './colors' as *;
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	position: relative;
+	height: 100vh;
+	background-image: url(../img/milionerzy2.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	z-index: 0;
+}
+
+#main {
+	border: 1px solid white;
+}
+
+div {
+	color: $white;
+}
+
+#question {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: $main;
+	border: 1.5px solid $border;
+	margin: 5px;
+}
+
+#left {
+	height: 100vh;
+	display: flex;
+	align-items: flex-end;
+	padding-bottom: 5vh;
+
+	span,
+	p {
+		margin: 0;
+		padding: 5px 5px;
+	}
+
+	.answer {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		background-color: $main;
+		border: 1.5px solid $border;
+		margin-top: 3px;
+		margin-right: 10px;
+		margin-bottom: 3px;
+	}
+	.answer:hover {
+		background-color: $orange;
+		opacity: 0.9;
+	}
+}
+
+#game-progress {
+	margin-top: 8vh;
+}
+
+.level span {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+}
+
+.level {
+	background-color: $main;
+	border: 1.5px solid $border;
+}
+
+.help > div {
+	display: flex;
+	justify-content: center; // wyśrodkuj w poziomie -- dziala tylko z display flex
+	align-items: center; // wyśrodkuj w pionie -- dziala tylko z display flex
+	height: 50px;
+	background-color: $main;
+	border: 1.5px solid $border;
+}
+
+.current-level {
+    background-color: $orange;
+}

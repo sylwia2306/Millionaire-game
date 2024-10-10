@@ -1,4 +1,4 @@
-[
+const easyQuestions = [
     {
         "id": "E1",
         "question": "Jakie jest stolicą Polski?",
@@ -548,5 +548,6 @@
             "D": "Tenis"
         },
         "correctAnswer": "A"
-    }
+    },
 ]
+;

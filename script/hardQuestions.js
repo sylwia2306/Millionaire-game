@@ -1,3 +1,4 @@
+const hardQuestions =
 [
     {
         "id": "H1",

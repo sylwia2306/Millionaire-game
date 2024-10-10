@@ -1,3 +1,4 @@
+const mediumQuestions =
 [
     {
         "id": "M1",
